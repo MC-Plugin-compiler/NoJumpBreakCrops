@@ -27,7 +27,8 @@ public class CropBreak implements Listener {
         if (e.getAction() == Action.PHYSICAL) {
             Player p = e.getPlayer();
             try {
-                if (e.getClickedBlock().getType() == Material.FARMLAND) {
+                // is 60 = soil = farmland
+                if (e.getClickedBlock().getTypeId() == 60 ) {
 
                     // If permission is explicitly set to false
                     if (p.isPermissionSet(this.permission) && !p.hasPermission(this.permission)) {
