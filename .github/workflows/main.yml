@@ -21,7 +21,6 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-        #distribution: 'zulu'
     - name: Build with maven
       run: mvn clean package
     - name: ls
@@ -31,4 +30,11 @@ jobs:
         cd target
         ls -la
 
-
+    - name: Upload jar to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: target/*.jar
+        tag: "1.2.1"
+        overwrite: true
+        file_glob: true
