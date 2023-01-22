@@ -3,16 +3,10 @@
 This is a very simple Minecraft plugin which prevent unauthorized players
 to break crops by jumping on them. This plugin **does not** have any other purpose !
 
-Tested with Paper 1.16, 1.17, 1.18 and 1.19.
-It should work with Bukkit, Spigot in **1.16+**.
+Special version for mc 1.12.2
 
-*I made this plugin for a private server and I decided to share
-it because maybe some people will find it useful.
-I may or **may not** add some features.*
 
 *The code could be better organized, but I think it's fine for what it does.*
-
-[Spigot Ressource Link](https://www.spigotmc.org/resources/nojumpbreakcrops.93706/)
 
 #### Usage Infos
 If you just want to install this plugin to prevent any non-op player from breaking crops
